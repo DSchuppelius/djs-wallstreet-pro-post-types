@@ -63,6 +63,20 @@ if (!class_exists('DJS_Wallstreet_Pro_PostTypes')) {
             }
         }
 
+        function mfields_set_default_object_terms($post_id, $post) {
+            if ("publish" == $post->post_status && $post->post_type == PORTFOLIO_POST_TYPE) {
+                $taxonomies = get_object_taxonomies($post->post_type, "object");
+                foreach ($taxonomies as $taxonomy) {
+                    $terms = wp_get_post_terms($post_id, $taxonomy->name);
+                    $myid = get_option("wallstreet_theme_default_term_id");
+                    $a = get_term_by("id", $myid, PORTFOLIO_TAXONOMY);
+                    if (empty($terms)) {
+                        wp_set_object_terms($post_id, $a->slug, $taxonomy->name);
+                    }
+                }
+            }
+        }
+
         private function setup_globals() {
             /** Versions **********************************************************/
             $this->version = '1.0.0';
@@ -106,6 +120,8 @@ if (!class_exists('DJS_Wallstreet_Pro_PostTypes')) {
         $instance = DJS_Wallstreet_Pro_PostTypes::instance();
 
         add_action("pre_get_posts", [$instance, "taxonomies_paged_function"]);
+        add_action("save_post", [$instance, "mfields_set_default_object_terms"], 100, 2);
+
 
         return $instance;
     }
