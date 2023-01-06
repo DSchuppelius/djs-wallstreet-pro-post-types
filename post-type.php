@@ -63,7 +63,7 @@ if (!class_exists('DJS_Wallstreet_Pro_PostTypes')) {
             }
         }
 
-        function mfields_set_default_object_terms($post_id, $post) {
+        public function mfields_set_default_object_terms($post_id, $post) {
             if ("publish" == $post->post_status && $post->post_type == PORTFOLIO_POST_TYPE) {
                 $taxonomies = get_object_taxonomies($post->post_type, "object");
                 foreach ($taxonomies as $taxonomy) {
@@ -121,7 +121,6 @@ if (!class_exists('DJS_Wallstreet_Pro_PostTypes')) {
 
         add_action("pre_get_posts", [$instance, "taxonomies_paged_function"]);
         add_action("save_post", [$instance, "mfields_set_default_object_terms"], 100, 2);
-
 
         return $instance;
     }

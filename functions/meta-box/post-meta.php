@@ -69,6 +69,7 @@ function wallstreet_meta_service() {
 
 function wallstreet_meta_portfolio() {
     global $post;
+    $show_project_picture_link = sanitize_text_field(get_post_meta(get_the_ID(), "show_project_picture_link", true));
     $meta_project_target = sanitize_text_field(get_post_meta(get_the_ID(), "meta_project_target", true));
     $portfolio_project_summary = sanitize_text_field(get_post_meta(get_the_ID(), "portfolio_project_summary", true));
     $meta_project_link = sanitize_text_field(get_post_meta(get_the_ID(), "meta_project_link", true));
@@ -76,6 +77,7 @@ function wallstreet_meta_portfolio() {
     <p><h4 class="heading"><?php esc_html_e("Link", DJS_POSTTYPE_PLUGIN); ?></h4></p>
     <p><input class="inputwidth" name="meta_project_link" id="meta_project_link" placeholder="<?php esc_attr_e("Link", DJS_POSTTYPE_PLUGIN); ?>" type="text" value="<?php if (!empty($meta_project_link)) { echo esc_attr($meta_project_link); } ?>"> </input></p>	
     <p><input type="checkbox" id="meta_project_target" name="meta_project_target" <?php if ($meta_project_target) { echo "checked"; } ?> ><?php esc_html_e("Open link in new tab", DJS_POSTTYPE_PLUGIN); ?></p>
+    <p><input type="checkbox" id="show_project_picture_link" name="show_project_picture_link" <?php if ($show_project_picture_link) { echo "checked"; } ?> ><?php esc_html_e("Show picture link", DJS_POSTTYPE_PLUGIN); ?></p>
     <p><h4 class="heading"><?php esc_html_e("Page Info", DJS_POSTTYPE_PLUGIN); ?></h4></p>
     <p><input class="inputwidth" name="portfolio_project_summary" id="portfolio_project_summary" placeholder="<?php esc_attr_e("Page Info", DJS_POSTTYPE_PLUGIN); ?>" type="text" value="<?php if (!empty($portfolio_project_summary)) { echo esc_attr($portfolio_project_summary); } ?>"> </input></p>	
 <?php }
@@ -198,6 +200,7 @@ function wallstreet_meta_save($post_id) {
             update_post_meta($post_ID, "service_readmore_text", sanitize_text_field($_POST["service_readmore_text"]));
         } elseif ($post_type == PORTFOLIO_POST_TYPE) {
             update_post_meta($post_ID, "portfolio_client_project_title", sanitize_text_field($_POST["portfolio_client_project_title"]));
+            update_post_meta($post_ID, "show_project_picture_link", sanitize_text_field($_POST["show_project_picture_link"]));
             update_post_meta($post_ID, "meta_project_target", sanitize_text_field($_POST["meta_project_target"]));
             update_post_meta($post_ID, "meta_project_link", sanitize_text_field($_POST["meta_project_link"]));
             update_post_meta($post_ID, "portfolio_project_visit_site", sanitize_text_field($_POST["portfolio_project_visit_site"]));

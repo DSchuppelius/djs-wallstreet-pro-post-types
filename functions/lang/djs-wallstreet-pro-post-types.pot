@@ -2,15 +2,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DJS-Wallstreet-Pro Post-Types\n"
-"POT-Creation-Date: 2022-10-07 17:07+0200\n"
-"PO-Revision-Date: 2022-10-03 13:00+0200\n"
+"POT-Creation-Date: 2023-01-06 13:42+0100\n"
+"PO-Revision-Date: 2022-10-13 09:22+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 "X-Poedit-Basepath: ../..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: post-type.php\n"
@@ -27,12 +27,12 @@ msgid "%s detected a conflict; please deactivate the plugin located in %s."
 msgstr ""
 
 #: functions/customizer/childs/customizer-client.php:19
-#: plugin_setup_data.php:113
+#: plugin_setup_data.php:110
 msgid "Our Clients"
 msgstr ""
 
 #: functions/customizer/childs/customizer-client.php:23
-#: plugin_setup_data.php:114
+#: plugin_setup_data.php:111
 msgid ""
 "Have a look at our clients we are growing their business and they are going "
 "up in the market by beating their competitors."
@@ -72,16 +72,16 @@ msgstr ""
 #: functions/customizer/childs/customizer-project.php:172
 #: functions/customizer/childs/customizer-service.php:303
 #: functions/meta-box/post-meta.php:40 functions/meta-box/post-meta.php:61
-#: functions/meta-box/post-meta.php:78 functions/meta-box/post-meta.php:99
-#: functions/meta-box/post-meta.php:134 functions/meta-box/post-meta.php:138
-#: functions/meta-box/post-meta.php:142 functions/meta-box/post-meta.php:146
-#: functions/meta-box/post-meta.php:150 functions/meta-box/post-meta.php:160
-#: functions/meta-box/post-meta.php:171
+#: functions/meta-box/post-meta.php:79 functions/meta-box/post-meta.php:101
+#: functions/meta-box/post-meta.php:136 functions/meta-box/post-meta.php:140
+#: functions/meta-box/post-meta.php:144 functions/meta-box/post-meta.php:148
+#: functions/meta-box/post-meta.php:152 functions/meta-box/post-meta.php:162
+#: functions/meta-box/post-meta.php:173
 msgid "Open link in new tab"
 msgstr ""
 
 #: functions/customizer/childs/customizer-feature.php:101
-#: plugin_setup_data.php:97
+#: plugin_setup_data.php:94
 msgid "Core features of theme"
 msgstr ""
 
@@ -109,7 +109,7 @@ msgstr ""
 #: functions/customizer/childs/customizer-feature.php:128
 #: functions/customizer/childs/customizer-feature.php:171
 #: functions/customizer/childs/customizer-feature.php:214
-#: plugin_setup_data.php:99 plugin_setup_data.php:102 plugin_setup_data.php:105
+#: plugin_setup_data.php:96 plugin_setup_data.php:99 plugin_setup_data.php:102
 msgid "Incredibly flexible"
 msgstr ""
 
@@ -124,8 +124,8 @@ msgstr ""
 #: functions/customizer/customizer-relationship.php:70
 #: functions/meta-box/post-meta.php:34 functions/meta-box/post-meta.php:35
 #: functions/meta-box/post-meta.php:63 functions/meta-box/post-meta.php:64
-#: functions/meta-box/post-meta.php:105 functions/meta-box/post-meta.php:106
-#: functions/meta-box/post-meta.php:127 functions/meta-box/post-meta.php:128
+#: functions/meta-box/post-meta.php:107 functions/meta-box/post-meta.php:108
+#: functions/meta-box/post-meta.php:129 functions/meta-box/post-meta.php:130
 msgid "Description"
 msgstr ""
 
@@ -149,7 +149,7 @@ msgid "Disable"
 msgstr ""
 
 #: functions/customizer/childs/customizer-partner.php:19
-#: plugin_setup_data.php:122
+#: plugin_setup_data.php:119
 msgid "Our Partners"
 msgstr ""
 
@@ -236,12 +236,12 @@ msgid "Number of portfolio on portfolio section"
 msgstr ""
 
 #: functions/customizer/childs/customizer-project.php:94
-#: plugin_setup_data.php:73 plugin_setup_data.php:89
+#: plugin_setup_data.php:70 plugin_setup_data.php:86
 msgid "Featured portfolio"
 msgstr ""
 
 #: functions/customizer/childs/customizer-project.php:108
-#: plugin_setup_data.php:74 plugin_setup_data.php:90
+#: plugin_setup_data.php:71 plugin_setup_data.php:87
 msgid "Most popular of our works."
 msgstr ""
 
@@ -250,22 +250,22 @@ msgid "Enable view all portfolios button"
 msgstr ""
 
 #: functions/customizer/childs/customizer-project.php:136
-#: plugin_setup_data.php:81
+#: plugin_setup_data.php:78
 msgid "View All Projects"
 msgstr ""
 
 #: functions/customizer/childs/customizer-project.php:143
 #: functions/customizer/childs/customizer-service.php:276
 #: functions/meta-box/post-meta.php:36 functions/meta-box/post-meta.php:66
-#: functions/meta-box/post-meta.php:67 functions/meta-box/post-meta.php:95
-#: functions/meta-box/post-meta.php:96
+#: functions/meta-box/post-meta.php:67 functions/meta-box/post-meta.php:97
+#: functions/meta-box/post-meta.php:98
 msgid "Button Text"
 msgstr ""
 
 #: functions/customizer/childs/customizer-project.php:157
 #: functions/customizer/childs/customizer-service.php:289
-#: functions/meta-box/post-meta.php:38 functions/meta-box/post-meta.php:97
-#: functions/meta-box/post-meta.php:98
+#: functions/meta-box/post-meta.php:38 functions/meta-box/post-meta.php:99
+#: functions/meta-box/post-meta.php:100
 msgid "Button Link"
 msgstr ""
 
@@ -326,14 +326,14 @@ msgid "Style 6"
 msgstr ""
 
 #: functions/customizer/childs/customizer-service.php:97
-#: plugin_setup_data.php:61
+#: plugin_setup_data.php:58
 msgid "Our Services"
 msgstr ""
 
 #: functions/customizer/childs/customizer-service.php:111
 #: functions/customizer/childs/customizer-service.php:200
-#: plugin_setup_data.php:55 plugin_setup_data.php:62 plugin_setup_data.php:64
-#: plugin_setup_data.php:76 plugin_setup_data.php:142
+#: plugin_setup_data.php:52 plugin_setup_data.php:59 plugin_setup_data.php:61
+#: plugin_setup_data.php:73 plugin_setup_data.php:139
 msgid "We offer great services to our clients"
 msgstr ""
 
@@ -358,7 +358,7 @@ msgid "Enable other services section in service template"
 msgstr ""
 
 #: functions/customizer/childs/customizer-service.php:184
-#: plugin_setup_data.php:63
+#: plugin_setup_data.php:60
 msgid "Other services"
 msgstr ""
 
@@ -488,11 +488,11 @@ msgstr ""
 msgid "4 Column Layout"
 msgstr ""
 
-#: functions/customizer/childs/customizer-team.php:73 plugin_setup_data.php:131
+#: functions/customizer/childs/customizer-team.php:73 plugin_setup_data.php:128
 msgid "The Team"
 msgstr ""
 
-#: functions/customizer/childs/customizer-team.php:87 plugin_setup_data.php:132
+#: functions/customizer/childs/customizer-team.php:87 plugin_setup_data.php:129
 msgid "Meet Our Experts"
 msgstr ""
 
@@ -645,10 +645,10 @@ msgid "Text"
 msgstr ""
 
 #: functions/meta-box/post-meta.php:39 functions/meta-box/post-meta.php:59
-#: functions/meta-box/post-meta.php:60 functions/meta-box/post-meta.php:76
-#: functions/meta-box/post-meta.php:77 functions/meta-box/post-meta.php:158
-#: functions/meta-box/post-meta.php:159 functions/meta-box/post-meta.php:169
-#: functions/meta-box/post-meta.php:170
+#: functions/meta-box/post-meta.php:60 functions/meta-box/post-meta.php:77
+#: functions/meta-box/post-meta.php:78 functions/meta-box/post-meta.php:160
+#: functions/meta-box/post-meta.php:161 functions/meta-box/post-meta.php:171
+#: functions/meta-box/post-meta.php:172
 msgid "Link"
 msgstr ""
 
@@ -664,61 +664,64 @@ msgstr ""
 msgid "To enable service icon check mark the checkbox"
 msgstr ""
 
-#: functions/meta-box/post-meta.php:79 functions/meta-box/post-meta.php:80
+#: functions/meta-box/post-meta.php:80
+msgid "Show picture link"
+msgstr ""
+
+#: functions/meta-box/post-meta.php:81 functions/meta-box/post-meta.php:82
 msgid "Page Info"
 msgstr ""
 
-#: functions/meta-box/post-meta.php:91 functions/meta-box/post-meta.php:92
+#: functions/meta-box/post-meta.php:93 functions/meta-box/post-meta.php:94
 #: functions/post-type/client.php:15
 msgid "Clients"
 msgstr ""
 
-#: functions/meta-box/post-meta.php:93 functions/meta-box/post-meta.php:94
+#: functions/meta-box/post-meta.php:95 functions/meta-box/post-meta.php:96
 msgid "Website"
 msgstr ""
 
-#: functions/meta-box/post-meta.php:125 functions/meta-box/post-meta.php:126
+#: functions/meta-box/post-meta.php:127 functions/meta-box/post-meta.php:128
 msgid "Designation"
 msgstr ""
 
-#: functions/meta-box/post-meta.php:130
+#: functions/meta-box/post-meta.php:132
 msgid "Social Media Settings"
 msgstr ""
 
-#: functions/meta-box/post-meta.php:132 functions/meta-box/post-meta.php:133
+#: functions/meta-box/post-meta.php:134 functions/meta-box/post-meta.php:135
 msgid "Facebook URL"
 msgstr ""
 
-#: functions/meta-box/post-meta.php:136 functions/meta-box/post-meta.php:137
+#: functions/meta-box/post-meta.php:138 functions/meta-box/post-meta.php:139
 msgid "Skype URL"
 msgstr ""
 
-#: functions/meta-box/post-meta.php:140 functions/meta-box/post-meta.php:141
+#: functions/meta-box/post-meta.php:142 functions/meta-box/post-meta.php:143
 msgid "RSS URL"
 msgstr ""
 
-#: functions/meta-box/post-meta.php:144 functions/meta-box/post-meta.php:145
+#: functions/meta-box/post-meta.php:146 functions/meta-box/post-meta.php:147
 msgid "LinkedIn URL"
 msgstr ""
 
-#: functions/meta-box/post-meta.php:148 functions/meta-box/post-meta.php:149
+#: functions/meta-box/post-meta.php:150 functions/meta-box/post-meta.php:151
 msgid "Twitter URL"
 msgstr ""
 
-#: functions/meta-box/post-meta.php:161
+#: functions/meta-box/post-meta.php:163
 msgid ""
 "Upload client image using feature image. Best fit scenario is using 130 X "
 "130 px image."
 msgstr ""
 
-#: functions/meta-box/post-meta.php:172
+#: functions/meta-box/post-meta.php:174
 msgid ""
 "Upload partner image using feature image. Best fit scenario is using 130 X "
 "130 px image."
 msgstr ""
 
-#: functions/plugin/plugin_setup.php:32 functions/plugin/plugin_setup.php:37
-#: post-type.php:71 post-type.php:76
+#: functions/plugin/plugin_base.php:39 functions/plugin/plugin_base.php:44
 msgid "Cheatin&#8217; huh?"
 msgstr ""
 
@@ -855,41 +858,41 @@ msgstr ""
 msgid "Portfolio Categories"
 msgstr ""
 
-#: plugin_setup_data.php:54
+#: plugin_setup_data.php:51
 msgid "Our great team"
 msgstr ""
 
-#: plugin_setup_data.php:75 plugin_setup_data.php:148
+#: plugin_setup_data.php:72 plugin_setup_data.php:145
 msgid "Related projects"
 msgstr ""
 
-#: plugin_setup_data.php:77
+#: plugin_setup_data.php:74
 msgid "Our Portfolio"
 msgstr ""
 
-#: plugin_setup_data.php:78
+#: plugin_setup_data.php:75
 msgid "Most popular of our works"
 msgstr ""
 
-#: plugin_setup_data.php:123
+#: plugin_setup_data.php:120
 msgid ""
 "Take a look at our partners. With their help, we expand your company and "
 "leave your competitors behind."
 msgstr ""
 
-#: plugin_setup_data.php:141
+#: plugin_setup_data.php:138
 msgid "Why choose us"
 msgstr ""
 
-#: plugin_setup_data.php:146
+#: plugin_setup_data.php:143
 msgid "Meet our"
 msgstr ""
 
-#: plugin_setup_data.php:147
+#: plugin_setup_data.php:144
 msgid "Great team"
 msgstr ""
 
-#: post-type.php:115
+#: post-type.php:52
 #, php-format
 msgid "Could not find language file %s/%s-%s.mo."
 msgstr ""

@@ -9,7 +9,7 @@
  */
 
 if (!defined('DJS_POSTTYPE_PLUGIN_DIR')) {
-    define("DJS_POSTTYPE_PLUGIN", dirname(plugin_basename( __FILE__ )));
+    define("DJS_POSTTYPE_PLUGIN", dirname(plugin_basename(__FILE__)));
     define("DJS_POSTTYPE_PLUGIN_DIR", plugin_dir_path(__FILE__));
     define("DJS_POSTTYPE_PLUGIN_DIR_URI", plugin_dir_url(__FILE__));
     define("DJS_POSTTYPE_PLUGIN_ASSETS_PATH", trailingslashit(DJS_POSTTYPE_PLUGIN_DIR . "assets"));
