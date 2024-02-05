@@ -83,8 +83,8 @@ class PostTypes_Plugin_Setup extends Plugin_Setup {
             // Taxonomy Archive Portfolio
             "taxonomy_portfolio_list" => 2,
             "wallstreet_products_category_slug" => "portfolio-categories",
-            "wallstreet_texonomy_title" => __("Featured portfolio", DJS_POSTTYPE_PLUGIN),
-            "wallstreet_texonomy_desc" => __("Most popular of our works.", DJS_POSTTYPE_PLUGIN),
+            "wallstreet_taxonomy_title" => __("Featured portfolio", DJS_POSTTYPE_PLUGIN),
+            "wallstreet_taxonomy_desc" => __("Most popular of our works.", DJS_POSTTYPE_PLUGIN),
     
             // Theme Features
             "theme_feature_enabled" => true,
