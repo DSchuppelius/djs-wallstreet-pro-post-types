@@ -35,7 +35,7 @@ function create_portfolio_taxonomy() {
         }
     }
     //update category
-    if (isset($_POST["action"]) && isset($_POST["taxonomy"])) {
+    if (isset($_POST["action"]) && isset($_POST["taxonomy"]) && isset($_POST["tag_ID"])) {
         wp_update_term($_POST["tag_ID"], PORTFOLIO_TAXONOMY, [
             "name" => $_POST["name"],
             "slug" => $_POST["slug"],
