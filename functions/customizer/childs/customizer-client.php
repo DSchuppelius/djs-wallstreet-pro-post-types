@@ -8,7 +8,7 @@
  * License Uri  : http://www.gnu.org/licenses/gpl.html
  */
 
-class Plugin_Theme_Client_Customizer extends Theme_Relationship_Customizer {
+class Plugin_Relationship_Client_Customizer extends Plugin_Relationship_Customizer {
 
     public function __construct() {
         parent::__construct();

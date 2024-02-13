@@ -9,8 +9,8 @@
  */
 if (!defined('ABSPATH')) exit;
 
-if (!class_exists('Plugin_Theme_Customizer')) {
-    abstract class Plugin_Theme_Customizer {
+if (!class_exists('Theme_Customizer')) {
+    abstract class Theme_Customizer {
         protected string $theme_options_name;
 
         protected bool $register_section;
@@ -36,3 +36,4 @@ if (!class_exists('Plugin_Theme_Customizer')) {
         abstract public function customize_register_settings_and_controls($wp_customize);
     }
 }
+

@@ -8,7 +8,7 @@
  * License Uri  : http://www.gnu.org/licenses/gpl.html
  */
 
-class Plugin_Theme_Post_Type_Slugs_Customizer extends Plugin_Theme_Customizer {
+class Plugin_Post_Type_Slugs_Customizer extends Plugin_Customizer {
     
     public function customize_register_panel($wp_customize) {}
 

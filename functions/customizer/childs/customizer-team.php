@@ -8,7 +8,7 @@
  * License Uri  : http://www.gnu.org/licenses/gpl.html
  */
 
-class Plugin_Theme_Team_Customizer extends Plugin_Theme_Customizer {
+class Plugin_Team_Customizer extends Plugin_Customizer {
 
     public function __construct() {
         parent::__construct();

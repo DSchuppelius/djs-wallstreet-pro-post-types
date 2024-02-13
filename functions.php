@@ -29,7 +29,7 @@ require_once(DJS_POSTTYPE_PLUGIN_FUNCTIONS_PATH . "post-type/custom-post-types.p
 require_once(DJS_POSTTYPE_PLUGIN_FUNCTIONS_PATH . "taxonomies/taxonomies.php");
 require_once(DJS_POSTTYPE_PLUGIN_FUNCTIONS_PATH . "meta-box/post-meta.php");
 
-require_once(DJS_POSTTYPE_PLUGIN_FUNCTIONS_PATH . "customizer/customizer.php");
+require_once(DJS_POSTTYPE_PLUGIN_FUNCTIONS_PATH . "customizer/plugin_customizer.php");
 require_once(DJS_POSTTYPE_PLUGIN_FUNCTIONS_PATH . "customizer/customizer-controls.php");
 require_once(DJS_POSTTYPE_PLUGIN_FUNCTIONS_PATH . "customizer/customizer-relationship.php");
 

@@ -17,7 +17,7 @@ defined('ABSPATH') or die('Hm, Are you ok?');
 require_once "functions.php";
 
 if (!class_exists('DJS_Wallstreet_Pro_PostTypes')) {
-    final class DJS_Wallstreet_Pro_PostTypes extends Plugin_Base{
+    final class DJS_Wallstreet_Pro_PostTypes extends DJS_Base{
         private $customizers;
 
         // @return plugin|null
@@ -98,17 +98,17 @@ if (!class_exists('DJS_Wallstreet_Pro_PostTypes')) {
         }
 
         private function setup_actions() {
-            $this->customizers["team"] = new Plugin_Theme_Team_Customizer();
-            $this->customizers["layout"] = new Plugin_Theme_Layout_Customizer();
-            $this->customizers["client"] = new Plugin_Theme_Client_Customizer();
-            $this->customizers["slider"] = new Plugin_Theme_Slider_Customizer();
-            $this->customizers["partner"] = new Plugin_Theme_Partner_Customizer();
-            $this->customizers["feature"] = new Plugin_Theme_Feature_Customizer();
-            $this->customizers["project"] = new Plugin_Theme_Project_Customizer();
-            $this->customizers["service"] = new Plugin_Theme_Service_Customizer();
-            $this->customizers["testimonial"] = new Plugin_Theme_Testimonial_Customizer();
+            $this->customizers["team"] = new Plugin_Team_Customizer();
+            $this->customizers["layout"] = new Plugin_Layout_Customizer();
+            $this->customizers["client"] = new Plugin_Relationship_Client_Customizer();
+            $this->customizers["slider"] = new Plugin_Slider_Customizer();
+            $this->customizers["partner"] = new Plugin_Relationship_Partner_Customizer();
+            $this->customizers["feature"] = new Plugin_Feature_Customizer();
+            $this->customizers["project"] = new Plugin_Project_Customizer();
+            $this->customizers["service"] = new Plugin_Service_Customizer();
+            $this->customizers["testimonial"] = new Plugin_Testimonial_Customizer();
 
-            $this->customizers["slugs"] = new Plugin_Theme_Post_Type_Slugs_Customizer();
+            $this->customizers["slugs"] = new Plugin_Post_Type_Slugs_Customizer();
 
             foreach($this->customizers as $customizer){
                 $customizer->register();
