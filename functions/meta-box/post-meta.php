@@ -208,12 +208,14 @@ function wallstreet_meta_save($post_id) {
             update_post_meta($post_ID, "portfolio_project_summary", sanitize_text_field($_POST["portfolio_project_summary"]));
             update_post_meta($post_ID, "meta_button_target", sanitize_text_field($_POST["meta_button_target"]));
             update_post_meta($post_ID, "meta_button_link", sanitize_text_field($_POST["meta_button_link"]));
-        } elseif ($post_type == "page") {
-            update_post_meta($post_ID, "page_description", sanitize_text_field($_POST["page_description"]));
-            update_post_meta($post_ID, "content_page_layout", sanitize_text_field($_POST["content_page_layout"]));
-        } elseif ($post_type == "post") {
-            update_post_meta($post_ID, "post_description", sanitize_text_field($_POST["post_description"]));
-            update_post_meta($post_ID, "content_post_layout", sanitize_text_field($_POST["content_post_layout"]));
+        } elseif ($post_type == "page" || $post_type == "post") {
+            // Fuer Seiten und Beitraege gibt es keine Metabox. Nur speichern, was wirklich
+            // mitgeschickt wurde, sonst leert jedes Speichern im Editor die Werte.
+            foreach ([$post_type . "_description", "content_" . $post_type . "_layout"] as $meta_key) {
+                if (isset($_POST[$meta_key])) {
+                    update_post_meta($post_ID, $meta_key, sanitize_text_field(wp_unslash($_POST[$meta_key])));
+                }
+            }
         } elseif ($post_type == TESTIMONIAL_POST_TYPE) {
             update_post_meta($post_ID, "testimonial_description_text", sanitize_text_field($_POST["testimonial_description_text"]));
         } elseif ($post_type == TEAM_POST_TYPE) {
