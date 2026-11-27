@@ -33,7 +33,7 @@ function define_customizer_controls($wp_customize) {
                 public function render_content() {
                     $current_setup = PostTypes_Plugin_Setup::instance();
                     $data_enable = is_array($current_setup->get("front_page_data")) ? $current_setup->get("front_page_data") : explode(",", $current_setup->get("front_page_data"));
-                    $defaultenableddata = ["service", "portfolio", "team", "blog", "testimonials", "features", "client", "partner"];
+                    $defaultenableddata = ["service", "portfolio", "team", "blog", "testimonials", "features", "client", "partner", "content"];
                     $layout_disable = array_diff($defaultenableddata, $data_enable); ?>
                     <h3><?php esc_html_e("Enable", DJS_POSTTYPE_PLUGIN); ?></h3>
                     <ul class="sortable customizer_layout" id="enable">
